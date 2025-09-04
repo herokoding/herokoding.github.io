@@ -2548,3 +2548,46 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.info-items-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .info-items-container {
+        flex-direction: column;
+    }
+    
+    .info-item {
+        min-width: 100%;
+    }
+}
+
+.back-to-home button {
+  background-color: #337ab7;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.back-to-home button:hover {
+  background-color: #23527c;
+}
+
+.back-to-home button a {
+  text-decoration: none;
+  color: #ffffff;
+}
