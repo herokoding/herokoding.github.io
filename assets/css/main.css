@@ -1602,11 +1602,15 @@ section,
   transition: 0.4s;
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   aspect-ratio: 1 / 1;
+  max-width: 300px;
+  /* Batas lebar maksimal agar tidak terlalu besar */
   width: 100%;
   height: auto;
+  margin: 0 auto;
+  /* Mengetengahkan item di dalam kolom grid */
 }
 
 .portfolio .portfolio-wrap img {
@@ -1624,51 +1628,59 @@ section,
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 25px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
+  padding: 15px;
+  /* Dipelihara/diperkecil dari 25px */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
   z-index: 3;
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: translateY(20px);
+  transform: translateY(15px);
   opacity: 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-info .content {
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: translateY(20px);
+  transform: translateY(15px);
 }
 
 .portfolio .portfolio-wrap .portfolio-info .category {
   display: inline-block;
   color: var(--accent-color);
-  font-size: 14px;
+  font-size: 12px;
+  /* Dikecilkan dari 14px */
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
+  letter-spacing: 0.8px;
+  margin-bottom: 4px;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 16px;
+  /* Dikecilkan dari 20px */
   color: var(--contrast-color);
-  font-weight: 700;
-  margin-bottom: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  /* Dikecilkan dari 15px */
 }
 
 .portfolio .portfolio-wrap .portfolio-info .portfolio-links {
   display: flex;
-  gap: 12px;
+  gap: 8px;
+  /* Dikecilkan dari 12px */
 }
 
 .portfolio .portfolio-wrap .portfolio-info .portfolio-links a {
   color: var(--contrast-color);
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  /* Dikecilkan dari 40px */
+  height: 34px;
+  /* Dikecilkan dari 40px */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: color-mix(in srgb, var(--accent-color), transparent 30%);
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 15px;
+  /* Dikecilkan dari 18px */
   transition: 0.3s;
 }
 
