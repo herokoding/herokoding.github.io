@@ -585,11 +585,15 @@ h2 {
     flex-direction: column;
     max-height: 0;
     overflow: hidden;
-    transition: max-height .35s
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height .35s, opacity .35s, visibility .35s
   }
 
   .mobile-nav.open {
-    max-height: 300px
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible
   }
 
   .mobile-nav a {
