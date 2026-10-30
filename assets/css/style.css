@@ -16,11 +16,13 @@
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px
 }
 
 body {
   margin: 0;
+  padding-top: 82px;
   background: var(--bg);
   color: var(--text);
   font-family: var(--sans);
@@ -52,10 +54,17 @@ button {
 }
 
 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
   height: 82px;
+  width: 100%;
   max-width: var(--max);
-  margin: auto;
+  margin: 0 auto;
   padding: 0 28px;
+  background: var(--bg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -559,6 +568,14 @@ h2 {
 }
 
 @media(max-width:800px) {
+  html {
+    scroll-padding-top: 88px
+  }
+
+  body {
+    padding-top: 70px
+  }
+
   .site-header {
     height: 70px;
     padding: 0 20px
