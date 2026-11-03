@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://herokoding.web.id/sitemap.xml
