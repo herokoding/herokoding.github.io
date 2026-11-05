@@ -563,6 +563,52 @@ strong {
   color: var(--accent);
 }
 
+/* blog */
+.blog-list {
+  display: grid;
+  gap: 9px;
+}
+
+.blog-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  transition: border-color .15s, transform .15s;
+}
+
+.blog-item:hover {
+  border-color: var(--text);
+  transform: translateY(-1px);
+}
+
+.blog-type {
+  display: block;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.blog-item h3 {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.blog-arrow {
+  flex: 0 0 auto;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.blog-item:hover .blog-arrow {
+  color: var(--accent);
+}
+
 /* project archive — grid of cards */
 .archive-header {
   padding: 36px 0 28px;
